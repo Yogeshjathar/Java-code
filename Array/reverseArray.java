@@ -1,10 +1,10 @@
 public class reverseArray {
     public static void main(String args[]){
         int arr[] = {1,2,3,4,5};
-        reverseArray(arr);
+        reverse(arr);
     }
 
-    public static void reverseArray(int arr[]){
+    public static void reverse(int arr[]){
         // int revArr[] = new int[arr.length];
 
         // for(int i=0; i<arr.length; i++){
