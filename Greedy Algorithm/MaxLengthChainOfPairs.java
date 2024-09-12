@@ -18,7 +18,7 @@ public class MaxLengthChainOfPairs {
         // 1st pair
         int chainLen = 1;
         int chainEnd = newPairs[0][2];
-        ans.add(newPairs[0][2]);
+        ans.add(newPairs[0][0]);
         for(int i=1; i<pairs.length; i++){
             if(newPairs[i][1] >= chainEnd){
                 chainLen++;
@@ -28,7 +28,7 @@ public class MaxLengthChainOfPairs {
         }
         System.out.println("Max length of chain : "+chainLen);
         for(int i=0; i<ans.size(); i++){
-            System.out.print(ans.get(i)+" ");
+            System.out.print("("+pairs[ans.get(i)][0]+","+pairs[ans.get(i)][1]+")");
         }
         System.out.println();
     }
