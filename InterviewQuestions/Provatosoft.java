@@ -1,4 +1,6 @@
 // Coding Problem: Find Anagram
+import java.util.HashMap;
+
 class Provatosoft {
     public boolean isAnagram(String s, String t) {
         if(s.length() != t.length()){
