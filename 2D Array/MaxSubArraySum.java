@@ -1,5 +1,5 @@
 public class MaxSubArraySum {
-    public static void printSubArray_BruteForce(int[] arr){
+    public static int printSubArray_BruteForce(int[] arr){
         int maxSum = Integer.MIN_VALUE;
         for(int i=0; i<arr.length; i++){
             int currSum = 0;
@@ -8,7 +8,7 @@ public class MaxSubArraySum {
                 maxSum = Math.max(maxSum, currSum);
             }
         }
-        System.out.println("Maximum sum of Subarray using Brute Force: "+maxSum);
+        return maxSum;
     }
 
     public static int printSubArray_Prefixsum(int arr[]){
@@ -60,7 +60,10 @@ public class MaxSubArraySum {
 
     public static void main(String args[]){
         int arr[]={-2,-3,4,-1,-2,1,5,-3};
-        printSubArray_BruteForce(arr);
-        System.out.println("Maximum sum of Subarray using Kadanes Algorithm: "+ printSubArray_Kadanes(arr));
+        
+        System.out.println("Maximum Subarray Sum using Brute Force: " + printSubArray_BruteForce(arr));
+        System.out.println("Maximum Subarray Sum using Prefix Sum: " + printSubArray_Prefixsum(arr));
+        System.out.println("Maximum Subarray Sum using Kadane's Algorithm: " + printSubArray_Kadanes(arr));
+        System.out.println("Maximum Subarray Sum using Kadane's Optimized Version: " + maxSubArray_Kadanes(arr));
     }
 }
