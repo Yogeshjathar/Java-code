@@ -18,9 +18,9 @@ public class binary_search {
 
         // subarrays(number);
 
-        // max_subarrays(number);
+        max_subarrays(number);
 
-        // max_subarrays_prefix(number); // int number[] = {1,-2,6,-1,3};
+        max_subarrays_prefix(number); // int number[] = {1,-2,6,-1,3};
 
         max_subarrays_kadane_s(number);     // int number[] = {-2,-3,4,-1,-2,1,5,-3};
     }
@@ -71,6 +71,7 @@ public class binary_search {
         System.out.println("tp = "+tp);
     }
 
+    // Time Complexity: O(n^3)
     public static void subarrays(int numbers[]){
         int ts=0;
         for(int i=0; i<numbers.length; i++){    // int start = i;
@@ -86,6 +87,7 @@ public class binary_search {
         System.out.println("Total Subarrays : "+ts);
     }
 
+    // Time Complexity: O(n^3)
     public static void max_subarrays(int numbers[]){
         // brute force
         // number[] = {2,4,6,8,10}
@@ -134,7 +136,7 @@ public class binary_search {
     }
 
     public static void max_subarrays_kadane_s(int numbers[]){
-        int cs = 0;
+        /* int cs = 0;
         int ms = Integer.MIN_VALUE;
 
         for(int i=0;i<numbers.length;i++){
@@ -144,6 +146,16 @@ public class binary_search {
             }
             ms = Math.max(cs,ms);
         }
-        System.out.println("maximum sum of subarrays : " + ms);
+        System.out.println("maximum sum of subarrays Kadane's Algorithm: " + ms); */
+
+        // Use below code in case input consist of -ve elements as well
+        int cs = numbers[0];
+        int ms = numbers[0];
+
+        for(int i=0; i<numbers.length; i++){
+            cs = Math.max(numbers[i], cs + numbers[i]);
+            ms = Math.max(cs, ms);
+        }
+        System.out.println("maximum sum of subarrays Using Kadane's Algorithm: " + ms);
     }
 }

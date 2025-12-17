@@ -29,4 +29,16 @@ public class Anagrams {
             System.out.println(str1+ " and " +str2+ " are not an anagrams strings");
         }
     }
+
+    // Approach 2
+    boolean isAnagramLowercase(String a, String b) {
+    if (a.length() != b.length()) return false;
+    int[] cnt = new int[26];
+    for (int i = 0; i < a.length(); i++) {
+        cnt[a.charAt(i) - 'a']++;
+        cnt[b.charAt(i) - 'a']--;
+    }
+    for (int c : cnt) if (c != 0) return false;
+    return true;
+}
 }
