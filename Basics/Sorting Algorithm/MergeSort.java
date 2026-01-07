@@ -9,7 +9,7 @@ public class MergeSort {
     }
 
     // Time Complexity: O(n log n)
-    // Space Complexity: O(n)
+    // Space Complexity: O(n) -> we use a temporary array to store elements in sorted order + auxiliary stack space.
     public static void ms(int[] arr, int low, int high){
         // Base case
         if(low >= high) return;
