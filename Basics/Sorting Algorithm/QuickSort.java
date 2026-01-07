@@ -9,7 +9,8 @@ public class QuickSort {
     }
 
     // Time Complexity: O(n log n)
-    // Space Complexity: O(n) -> auxiliary stack space.
+    // Space Complexity: O(log n) average, O(n) worst case (recursion stack)
+    // To avoid worst-case O(n²), I randomized the pivot.
     public static void qs(int[] arr, int low, int high){
         if(low < high){
             int pIndex = partition(arr, low, high);
@@ -19,6 +20,9 @@ public class QuickSort {
     }
 
     public static int partition(int[] arr, int low, int high){
+        int randomIndex = low + (int) (Math.random() * (high-low+1));
+        swap(arr, low, randomIndex);
+
         int pivot = arr[low];
         int i = low;
         int j = high;
