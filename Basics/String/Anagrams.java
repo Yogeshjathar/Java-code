@@ -9,6 +9,11 @@ public class Anagrams {
         System.out.print("Enter second string : ");
         String str2 = sc.next();    // str2 = "heart";          str2 = "care";
 
+        System.out.println(isAnagram2(str1, str2));
+    }
+
+    // Approach 2
+    public static boolean isAnagram1(String str1, String str2) {
         str1 = str1.toLowerCase();
         str2 = str2.toLowerCase();
         if(str1.length() == str2.length()){
@@ -17,21 +22,14 @@ public class Anagrams {
             Arrays.sort(ch1);
             Arrays.sort(ch2);
 
-            boolean result = Arrays.equals(ch1,ch2);
-            if(result){
-                System.out.println(str1+ " and " +str2+ " are an anagrams strings");
-            }
-            else{
-                System.out.println(str1+ " and " +str2+ " are not an anagrams strings");
-            }
+            return Arrays.equals(ch1,ch2);
         }
-        else{
-            System.out.println(str1+ " and " +str2+ " are not an anagrams strings");
-        }
+
+        return false;
     }
 
     // Approach 2
-    boolean isAnagramLowercase(String a, String b) {
+    public static boolean isAnagram2(String a, String b) {
     if (a.length() != b.length()) return false;
     int[] cnt = new int[26];
     for (int i = 0; i < a.length(); i++) {
