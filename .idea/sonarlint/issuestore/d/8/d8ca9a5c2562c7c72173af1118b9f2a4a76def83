@@ -1,0 +1,46 @@
+
+’
+java:S1120"wMake this line start after 2 spaces instead of 4 in order to indent the code consistently. (Indentation level is at 2.)(³Õ«†ûÿÿÿÿ
+’
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(¿ûÄôüÿÿÿÿ
+
+java:S1120	"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(Ò¹ç¬
+“
+java:S1120"xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(åªÀïøÿÿÿÿ
+
+java:S1120"wMake this line start after 4 spaces instead of 8 in order to indent the code consistently. (Indentation level is at 2.)(ÎùÚ¸
+
+java:S1120 "xMake this line start after 6 spaces instead of 12 in order to indent the code consistently. (Indentation level is at 2.)(‹êÂ
+g	java:S109"RAssign this magic number 2 to a well-named constant, and use the constant instead.(§²×
+g	java:S109"RAssign this magic number 2 to a well-named constant, and use the constant instead.(–üàò
+g	java:S109"RAssign this magic number 3 to a well-named constant, and use the constant instead.(Ãïğ
+l	java:S109"RAssign this magic number 4 to a well-named constant, and use the constant instead.(æ«èáşÿÿÿÿ
+g	java:S109"RAssign this magic number 5 to a well-named constant, and use the constant instead.(ÁƒÒÇ
+l	java:S109"RAssign this magic number 6 to a well-named constant, and use the constant instead.(è×Ñ¼øÿÿÿÿ
+g	java:S109"RAssign this magic number 7 to a well-named constant, and use the constant instead.(¹ÂÖ¨
+l	java:S109"RAssign this magic number 8 to a well-named constant, and use the constant instead.(½Ö‰ ÿÿÿÿÿ
+l	java:S109"RAssign this magic number 9 to a well-named constant, and use the constant instead.(‘¤ÒŒıÿÿÿÿ
+h	java:S109"SAssign this magic number 10 to a well-named constant, and use the constant instead.(–¸È›
+0
+java:S1220""Move this file to a named package.
+4	java:S113"'Add a new line at the end of this file.
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(õ™¼–şÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(³Õ«†ûÿÿÿÿ
+W
+java:S1106"AMove this left curly brace to the beginning of next line of code.(§²×
+W
+java:S1106"AMove this left curly brace to the beginning of next line of code.(Ğº¯°
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(¡şÏÖøÿÿÿÿ
+\
+java:S1106"AMove this left curly brace to the beginning of next line of code.(·Ã½şÿÿÿÿ
+D
+java:S2208".Explicitly import the specific classes needed.(Î€ŒÙ
+E
+java:S6212"/Declare this local variable with "var" instead.(§²×
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+@	java:S106 "+Replace this use of System.out by a logger.(‹êÂ
+E	java:S106""+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ

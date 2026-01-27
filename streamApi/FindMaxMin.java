@@ -1,5 +1,3 @@
-package com.JavaConcepts.streamApi;
-
 import java.util.List;
 
 public class FindMaxMin {

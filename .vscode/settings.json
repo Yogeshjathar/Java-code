@@ -1,0 +1,22 @@
+{
+    "java.project.sourcePaths": [
+        "streamApi",
+        "advance/BST",
+        "Basics/String",
+        "Basics/Stack",
+        "Basics/Sorting Algorithm",
+        "Basics/Queue",
+        "Basics/Packages/ProjectRoot",
+        "Basics/Linked List",
+        "Basics/InterviewQuestions",
+        "Basics/Hashing",
+        "Basics/Greedy Algorithm",
+        "Basics/Conquer_Divide",
+        "Basics/Bit Manipulation",
+        "Basics/Binary Trees",
+        "Basics/ArrayList",
+        "Basics/Array",
+        "Basics/2D Array",
+        "advance/graph"
+    ]
+}

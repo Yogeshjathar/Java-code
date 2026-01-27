@@ -1,10 +1,6 @@
-package com.JavaConcepts.streamApi;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
+
 
 public class TopKFrequentFromList {
 
