@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "streamApi",
+        "advance/graph",
         "advance/BST",
         "Basics/String",
         "Basics/Stack",
@@ -17,6 +18,6 @@
         "Basics/ArrayList",
         "Basics/Array",
         "Basics/2D Array",
-        "advance/graph"
+        "advance/binarysearch"
     ]
 }
