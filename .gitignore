@@ -1,0 +1,4 @@
+# Ignore Visual Studio Code settings folder
+.vscode/    
+# Ignore JetBrains IDEs settings folder
+.idea/
